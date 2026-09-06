@@ -3,6 +3,7 @@ import "./Navbar.css";
 // images
 import logoIcon from "../assets/logo.png";
 import searchIcon from "../assets/search.png";
+import menuIcon from "../assets/menu.png";
 import uploadIcon from "../assets/upload.png";
 import notificationIcon from "../assets/notification.png";
 import moreIcon from "../assets/more.png";
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar flex-div">
       <div className="left-navbar flex-div">
+        <img src={menuIcon} alt="menu" id="menu-nav" />
         <img src={logoIcon} alt="logo" />
       </div>
       <div className="middle-navbar flex-div">
