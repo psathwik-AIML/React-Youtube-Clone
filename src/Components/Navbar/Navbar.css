@@ -9,10 +9,12 @@
 }
 .left-navbar img {
   width: 200px;
+  /* border: 1px solid red; */
   cursor: pointer;
 }
-#menu-nav {
+.left-navbar #menu-nav {
   /* border: 2px solid red; */
+  cursor: pointer;
   width: 30px;
   margin-right: 20px;
 }

@@ -6,6 +6,7 @@
   padding-top: 80px;
   position: fixed;
   top: 0;
+  z-index: -2;
 }
 .shortcut-links img {
   width: 27px;
@@ -36,4 +37,15 @@
 .subscribed-list img {
   width: 30px;
   border-radius: 50%;
+}
+.small {
+  width: 5%;
+}
+.small p,
+.small h3 {
+  display: none;
+}
+.small hr {
+  width: 50%;
+  margin-bottom: 20px;
 }

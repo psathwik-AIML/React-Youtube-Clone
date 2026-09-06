@@ -1,18 +1,23 @@
 import React from "react";
 import "./Navbar.css";
 // images
-import logoIcon from "../assets/logo.png";
-import searchIcon from "../assets/search.png";
-import menuIcon from "../assets/menu.png";
-import uploadIcon from "../assets/upload.png";
-import notificationIcon from "../assets/notification.png";
-import moreIcon from "../assets/more.png";
-import profileIcon from "../assets/user_profile.jpg";
-const Navbar = () => {
+import logoIcon from "../../assets/logo.png";
+import searchIcon from "../../assets/search.png";
+import menuIcon from "../../assets/menu.png";
+import uploadIcon from "../../assets/upload.png";
+import notificationIcon from "../../assets/notification.png";
+import moreIcon from "../../assets/more.png";
+import profileIcon from "../../assets/user_profile.jpg";
+const Navbar = ({ setSidebar, sidebar }) => {
   return (
     <nav className="navbar flex-div">
       <div className="left-navbar flex-div">
-        <img src={menuIcon} alt="menu" id="menu-nav" />
+        <img
+          src={menuIcon}
+          alt="menu"
+          id="menu-nav"
+          onClick={() => setSidebar(!sidebar)}
+        />
         <img src={logoIcon} alt="logo" />
       </div>
       <div className="middle-navbar flex-div">
